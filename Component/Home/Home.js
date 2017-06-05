@@ -12,7 +12,7 @@ import {
   ScrollView
 } from 'react-native';
 import Dimensions from 'Dimensions';
-const totalWidth = Dimensions.get('window').width;
+let totalWidth = Dimensions.get('window').width;
 import Carousel from './Carousel.js';
 import HomeActivities1 from './HomeActivities1.js';
 import HomeActivities2 from './HomeActivities2.js';
@@ -22,6 +22,16 @@ import ShopCenterDetail from './ShopCenterDetail.js';
 import GuessWhatYouLike from './GuessWhatYouLike.js';
 
 export default class Home extends Component {
+  state = {
+    totalWidth: totalWidth
+  }
+  componentDidMount() {
+    Dimensions.addEventListener('change', e => {
+      this.setState({
+        totalWidth: e.window.width,
+      })
+    })
+  }
   navToAct2 = () => {
     this.props.navigator.push({
       component: Test,
@@ -48,7 +58,7 @@ export default class Home extends Component {
           </TouchableOpacity>
           <View>
             <TextInput
-              style={styles.input}
+              style={[styles.input, {width: this.state.totalWidth * 0.7}]}
               keyboardType='web-search'
               underlineColorAndroid='transparent'
               returnKeyType='join'
@@ -92,7 +102,6 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS == 'ios' ? 14 : 0,
   },
   input: {
-    width: totalWidth * 0.7,
     height: Platform.OS === 'ios' ? 34 : 30,
     fontSize: 16,
     backgroundColor: '#fff',
