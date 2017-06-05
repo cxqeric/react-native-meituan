@@ -10,13 +10,7 @@
 
 - 从0.44版本开始，`Navigator`被从react-native的核心组件库中剥离到了一个名为`react-native-deprecated-custom-components`的单独模块中。如果你需要继续使用`Navigator`，则需要先`npm i -S react-native-deprecated-custom-components`，然后从这个模块中import，即`import { Navigator } from 'react-native-deprecated-custom-components'`.
 
-<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show1.png" width="360" height="640" align="left" style="margin-right:75px">
-<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show2.png" width="360" height="640" align="left" style="margin-right:75px">
-<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show3.png" width="360" height="640" align="left" style="margin-right:75px">
-<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show4.png" width="360" height="640" align="left" style="margin-right:75px">
-<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show5.png" width="360" height="640" align="left" style="margin-right:75px">
-<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show6.png" width="360" height="640" align="left" style="margin-right:75px">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        
+- 图片见最下方。
 
 ## 组件
 
@@ -332,3 +326,11 @@ class Demo extends Component {
 ```
 
 暂时就到这里(2017.06.05)。
+
+<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show1.png" width="360" height="640" align="left" style="margin-right:75px">
+<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show2.png" width="360" height="640" align="left" style="margin-right:75px">
+<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show3.png" width="360" height="640" align="left" style="margin-right:75px">
+<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show4.png" width="360" height="640" align="left" style="margin-right:75px">
+<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show5.png" width="360" height="640" align="left" style="margin-right:75px">
+<img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show6.png" width="360" height="640" align="left" style="margin-right:75px">
+       
