@@ -85,6 +85,9 @@ def enableProguardInReleaseBuilds = false
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
+    
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
 
     defaultConfig {
         applicationId "com.meituan"
@@ -94,6 +97,16 @@ android {
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    signingConfigs {
+        release {
+            if (project.hasProperty('my-release-key')) {
+                storeFile file(my-release-key.keystore)
+                storePassword 123456
+                keyAlias my-key-alias
+                keyPassword 123456
+            }
         }
     }
     splits {
