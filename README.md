@@ -12,11 +12,13 @@
 
 <img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show1.png" width="360" height="640" align="left">
 <img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show2.png" width="360" height="640" align="left">
+<br>
 <img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show3.png" width="360" height="640" align="left">
 <img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show4.png" width="360" height="640" align="left">
+<br>
 <img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show5.png" width="360" height="640" align="left">
 <img src="https://github.com/yuwanlin/react-native-meituan/raw/master/output/images/show6.png" width="360" height="640" align="left">
-
+<br>
 
 
 ## 组件
